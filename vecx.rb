@@ -1,9 +1,8 @@
 class Vecx < Formula
   desc "Vectrex emulator"
   homepage "https://github.com/jhawthorn/vecx"
-  url "https://github.com/jhawthorn/vecx/archive/v1.0.tar.gz"
-  sha256 "6aac0c1840982aa3cc8607d5fa65597b6644840f2ba1ea3715a0349522312f56"
-  revision 1
+  url "https://github.com/jhawthorn/vecx/archive/v1.1.tar.gz"
+  sha256 "206ab30db547b9c711438455917b5f1ee96ff87bd025ed8a4bd660f109c8b3fb"
 
   bottle do
     cellar :any
