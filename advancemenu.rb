@@ -1,8 +1,8 @@
 class Advancemenu < Formula
   desc "Frontend for AdvanceMAME/MESS"
   homepage "http://www.advancemame.it/menu-readme.html"
-  url "https://github.com/amadvance/advancemame/releases/download/advancemenu-2.9/advancemenu-2.9.tar.gz"
-  sha256 "c8bc7b363ccded2aa79fc7ce44accde9e661afaa1366aea0a243d2c1c395fa10"
+  url "https://github.com/amadvance/advancemame/releases/download/v3.0/advancemame-3.0.tar.gz"
+  sha256 "19077f55ab636ac8e996d87775a1eb86c2ced381cbcd57c1e0c0bf410f4b4101"
 
   bottle do
     sha256 "17b87afd785fefa91eb2fc1aa6e1ac4b96869d8f9921c958bb45e27a0beed1f7" => :sierra
