@@ -13,6 +13,7 @@ class Advancemenu < Formula
   depends_on "sdl"
 
   def install
+    ENV.delete "SDKROOT" if MacOS.version == :yosemite
     system "./configure", "--prefix=#{prefix}"
     system "make", "install", "LDFLAGS=#{ENV.ldflags}", "mandir=#{man}"
   end
