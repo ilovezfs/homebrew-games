@@ -5,9 +5,7 @@ class Mednafen < Formula
   sha256 "74736b9b52a7ba6270b67ae8e6c876a887e0e26a00a7d96bdd49af17992aac47"
 
   bottle do
-    sha256 "6e5f8e9773db1b2763d85ba48f35398b18f5a81829112de8c0f284642cc94ec2" => :sierra
-    sha256 "f97aa8b4332b031dd41b88d14dee487e5d8ffad19519b228f96b58bf6f937c61" => :el_capitan
-    sha256 "c69d3c0532d67644b09bc672e42db21919a48e008f69718ce21019c45c4b127a" => :yosemite
+    sha256 "9959b1e649d1557b5e3a1e9f0637fcc043caa0bd45ce6888785647dbee9495cf" => :sierra
   end
 
   depends_on "pkg-config" => :build
