@@ -1,8 +1,8 @@
 class Ski < Formula
   desc "Evade the deadly Yeti on your jet-powered skis"
   homepage "http://catb.org/~esr/ski/"
-  url "http://www.catb.org/~esr/ski/ski-6.11.tar.gz"
-  sha256 "8dd0335d093b3a0f4486abd269f2bde300d97d2972ef1467fd6dff5de9a31b26"
+  url "http://www.catb.org/~esr/ski/ski-6.12.tar.gz"
+  sha256 "2f34f64868deb0cc773528c68d9829119fac359c44a704695214d87773df5a33"
 
   bottle do
     cellar :any_skip_relocation
@@ -15,9 +15,6 @@ class Ski < Formula
     url "git://thyrsus.com/repositories/ski.git"
     depends_on "xmlto" => :build
   end
-
-  # Reported upstream by email
-  patch :DATA
 
   def install
     if build.head?
@@ -32,16 +29,3 @@ class Ski < Formula
     assert_match "Bye!", pipe_output("#{bin}/ski", "")
   end
 end
-
-__END__
---- ski-6.11/ski
-+++ ski-6.11/ski
-@@ -481,7 +481,7 @@
-             colordict[ch] = curses.tparm(color, idx)
-         else:
-             colordict[ch] = ""
--    reset = curses.tigetstr("sgr0").decode("ascii") or ""
-+    reset = (curses.tigetstr("sgr0") or "").decode("ascii")
-     terrain_key = colorize(terrain_key)
-
-     print("SKI!  Version %s.  Type ? for help." % version)
