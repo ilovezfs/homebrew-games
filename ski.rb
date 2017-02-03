@@ -6,9 +6,9 @@ class Ski < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d6d39457830786bc0aa2bdd303804636cb675a707fa7f2a12b382882cf6cea91" => :sierra
-    sha256 "fd3e643e162d93976d2b89cdfb40fe54bad73f6d02105e663c59e08d6623ab1d" => :el_capitan
-    sha256 "fd3e643e162d93976d2b89cdfb40fe54bad73f6d02105e663c59e08d6623ab1d" => :yosemite
+    sha256 "67711654d0b4888ee6bd623ff75f9311d41c1e0be3a52382ff55b62dd6605f60" => :sierra
+    sha256 "67711654d0b4888ee6bd623ff75f9311d41c1e0be3a52382ff55b62dd6605f60" => :el_capitan
+    sha256 "67711654d0b4888ee6bd623ff75f9311d41c1e0be3a52382ff55b62dd6605f60" => :yosemite
   end
 
   head do
