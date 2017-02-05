@@ -1,8 +1,8 @@
 class Advancemame < Formula
   desc "MAME with advanced video support"
   homepage "http://www.advancemame.it/"
-  url "https://github.com/amadvance/advancemame/releases/download/advancemame-1.4/advancemame-1.4.tar.gz"
-  sha256 "525e0897cd41fe8d3ef563e59592da740ebe005eda0948515dca410d01624bcc"
+  url "https://github.com/amadvance/advancemame/releases/download/v3.2/advancemame-3.2.tar.gz"
+  sha256 "7fd10d765cc1ce38bb463bf4c7d5947619bc08838a8671a9f3da0bc6d76eb822"
 
   bottle do
     sha256 "63208837d31d054aa77903d6ec2fadbf7433192190492a3ede42dabe96ad80d2" => :yosemite
@@ -14,8 +14,9 @@ class Advancemame < Formula
   depends_on "freetype"
 
   def install
+    ENV.delete "SDKROOT" if MacOS.version == :yosemite
     system "./configure", "--prefix=#{prefix}"
-    system "make", "install", "mandir=#{man}", "docdir=#{doc}"
+    system "make", "install", "LDFLAGS=#{ENV.ldflags}", "mandir=#{man}", "docdir=#{doc}"
   end
 
   test do
