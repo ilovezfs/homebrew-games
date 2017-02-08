@@ -1,14 +1,4 @@
-# Homebrew Games
-## How do I install these formulae?
-`brew install homebrew/games/<formula>`
+# Homebrew/games
+These formulae were games.
 
-Or `brew tap homebrew/games` and then `brew install <formula>`.
-
-Or install via URL (which will not receive updates):
-
-```
-brew install https://raw.githubusercontent.com/Homebrew/homebrew-games/master/<formula>.rb
-```
-
-## Documentation
-`brew help`, `man brew` or check [Homebrew's documentation](https://github.com/Homebrew/brew/tree/master/docs/#readme).
+All formulae were migrated to [Homebrew/homebrew-core](https://github.com/Homebrew/homebrew-core) or deleted.
